@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.template-toggle{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+header{
+    background-color: rgb(105, 25, 25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo h1{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.toggle{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.toggle p{
+    color: white;
+    font-style: italic;
+}
+.toggle .box-toggle{
+    position: relative;
+    z-index: 10;
+    border: solid 2px rgb(186, 161, 17);
+    height: 35px;
+    width: 70px;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(163, 162, 162), rgb(255, 255, 255));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.box-toggle .btn{
+    position: absolute;
+    top: 1px;
+    left: 0.5px;
+    z-index: 100;
+    height: 29px;
+    width: 30px;
+    background-color: rgb(186, 161, 17);
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.box-toggle .sun{
+    position: relative;
+    z-index: 11;
+    color: rgb(186, 161, 17);
+}
+.box-toggle .moon{
+    position: relative;
+    z-index: 11;
+    color: rgb(0, 0, 0);
+}
+.template-toggle main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*height: 450px;*/
+}
+.template-toggle main .box-icon{
+    display: flex;
+}
+.template-toggle main .box-icon i{
+    font-size: 3rem;
+    color: rgb(105, 25, 25);
+}
+.template-toggle main .box p{
+    color: rgb(105, 25, 25);
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -8px;
+}
+.template-toggle footer{
+    background-color: rgb(105, 25, 25);
+    padding: 10px;
+    /*height: 52px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.template-toggle footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
